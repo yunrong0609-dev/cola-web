@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Fuel Station</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="brand nav-control" data-target="home" type="button" aria-label="Home">
+        <span class="brand-coke">Coca-Cola</span>
+        <span class="brand-divider"></span>
+        <span class="brand-cpc">中油</span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-target="home" type="button">Home</button>
+        <button class="nav-link" data-target="about" type="button">About</button>
+        <button class="nav-link" data-target="plan" type="button">Plan</button>
+        <button class="nav-link" data-target="products" type="button">Products</button>
+        <button class="nav-link" data-target="contact" type="button">Contact</button>
+      </nav>
+
+      <button class="join-button auth-entry" type="button">
+        Join Party
+        <span class="party-mark" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-panel" id="home" data-section="home">
+        <img class="hero-image" src="images/mockup.png" alt="Human Fuel Station party scene" />
+        <div class="hero-scrim"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Coca-Cola x CPC Pop-up</p>
+          <h1>Human <span>Fuel</span> Station</h1>
+          <p class="hero-title-zh">人類燃料補給站</p>
+          <p class="hero-text">可樂水、人類的燃料來源！充滿氣體，喝了活力滿滿，大量補給，派對、游泳都好用！</p>
+          <div class="hero-actions">
+            <button class="primary-action order-launch" data-plan="20L" data-product="Original" type="button">立即補給</button>
+            <button class="secondary-action nav-control" data-target="about" type="button">了解更多</button>
+          </div>
+        </div>
+
+        <aside class="fuel-board" aria-label="Today's fuel prices">
+          <p class="board-label">今日油價</p>
+          <h2>Today's Fuel</h2>
+          <div class="fuel-row">
+            <span>Original</span>
+            <strong>88.8</strong>
+          </div>
+          <div class="fuel-row">
+            <span>Zero</span>
+            <strong>95.0</strong>
+          </div>
+          <div class="fuel-row">
+            <span>Cherry</span>
+            <strong>98.0</strong>
+          </div>
+          <div class="board-footer">24H</div>
+        </aside>
+      </section>
+
+      <section class="feature-strip">
+        <article class="feature-card selection-control selected" data-select-group="intro" role="button" tabindex="0">
+          <span class="feature-icon fuel-can" aria-hidden="true"></span>
+          <div>
+            <h2>大量補給更划算</h2>
+            <p>用加油站的方式購買可樂，越多組越值。</p>
+          </div>
+        </article>
+        <article class="feature-card selection-control" data-select-group="intro" role="button" tabindex="0">
+          <span class="feature-icon party-lines" aria-hidden="true"></span>
+          <div>
+            <h2>派對最佳夥伴</h2>
+            <p>一次補滿，大家一起喝，派對不怕口渴。</p>
+          </div>
+        </article>
+        <article class="feature-card selection-control" data-select-group="intro" role="button" tabindex="0">
+          <span class="feature-icon pool-icon" aria-hidden="true"></span>
+          <div>
+            <h2>可樂游泳池</h2>
+            <p>特製可樂池，邊涼爽玩，讓派對更有場面。</p>
+          </div>
+        </article>
+        <article class="feature-card selection-control" data-select-group="intro" role="button" tabindex="0">
+          <span class="feature-icon smile-icon" aria-hidden="true"></span>
+          <div>
+            <h2>人類專屬燃料</h2>
+            <p>可樂水，為人類設計的能量補給來源。</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="about-video section-panel" id="about" data-section="about">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>Fuel Up With Coca-Cola</h2>
+          <p>透過產品介紹影片，快速認識 Human Fuel Station 的補給概念、可樂風味與派對情境。從 Original、Zero 到 Cherry，選擇你的專屬燃料，為下一場活動補滿能量。</p>
+        </div>
+        <div class="video-shell">
+          <iframe
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0"
+            title="Human Fuel Station campaign video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="station-layout section-panel" id="plan" data-section="plan">
+        <div class="station-photo">
+          <img src="images/mockup.png" alt="Coca-Cola pool party" />
+        </div>
+
+        <div class="plan-panel">
+          <p class="eyebrow">Party Fuel Plan</p>
+          <h2>派對補給方案<br />越多越優惠！</h2>
+          <div class="plan-list">
+            <button class="plan-row selection-control order-launch selected" data-select-group="plan" data-plan="10L" type="button">
+              <span>10L 補給包</span>
+              <strong>$399</strong>
+            </button>
+            <button class="plan-row selection-control order-launch popular" data-select-group="plan" data-plan="20L" type="button">
+              <span>20L 補給包</span>
+              <strong>$699</strong>
+              <em>Popular</em>
+            </button>
+            <button class="plan-row selection-control order-launch best" data-select-group="plan" data-plan="30L" type="button">
+              <span>30L 補給包</span>
+              <strong>$999</strong>
+              <em>Best Value</em>
+            </button>
+          </div>
+          <button class="white-action order-launch" data-plan="20L" type="button">查看方案</button>
+        </div>
+
+        <div class="choose-card">
+          <p class="eyebrow">Choose Your Fuel</p>
+          <h2>選擇你的燃料，開啟滿滿活力！</h2>
+          <ul>
+            <li>充滿氣體 Fizzy & Refreshing</li>
+            <li>活力滿滿 Energy Boost</li>
+            <li>派對必備 Party Essential</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="products section-panel" id="products" data-section="products">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>Choose Your Fuel</h2>
+        </div>
+
+        <div class="fuel-grid">
+          <button class="fuel-card selection-control order-launch selected" data-select-group="fuel" data-product="Original" type="button">
+            <span class="fuel-name red">Original</span>
+            <strong>88.8</strong>
+            <span class="product-visual original" aria-hidden="true">
+              <span class="pump-face">
+                <span class="pump-screen">88.8</span>
+                <span class="pump-logo">Coca-Cola</span>
+                <span class="bubble-tank"></span>
+              </span>
+              <span class="fuel-hose"></span>
+              <span class="fuel-nozzle"></span>
+              <span class="pump-base"></span>
+            </span>
+            <span class="fuel-note">Classic Spark</span>
+          </button>
+          <button class="fuel-card selection-control order-launch" data-select-group="fuel" data-product="Zero" type="button">
+            <span class="fuel-name dark">Zero</span>
+            <strong>95.0</strong>
+            <span class="product-visual zero" aria-hidden="true">
+              <span class="pump-face">
+                <span class="pump-screen">95.0</span>
+                <span class="pump-logo">Zero</span>
+                <span class="bubble-tank"></span>
+              </span>
+              <span class="fuel-hose"></span>
+              <span class="fuel-nozzle"></span>
+              <span class="pump-base"></span>
+            </span>
+            <span class="fuel-note">Light Boost</span>
+          </button>
+          <button class="fuel-card selection-control order-launch" data-select-group="fuel" data-product="Cherry" type="button">
+            <span class="fuel-name cherry">Cherry</span>
+            <strong>98.0</strong>
+            <span class="product-visual cherry" aria-hidden="true">
+              <span class="pump-face">
+                <span class="pump-screen">98.0</span>
+                <span class="pump-logo">Cherry</span>
+                <span class="bubble-tank"></span>
+              </span>
+              <span class="fuel-hose"></span>
+              <span class="fuel-nozzle"></span>
+              <span class="pump-base"></span>
+            </span>
+            <span class="fuel-note">Sweet Charge</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="checkout-page" id="orderPage" aria-hidden="true">
+      <div class="checkout-topbar">
+        <div class="account-tools">
+          <button class="login-chip auth-entry" type="button">
+            <span class="login-dot" aria-hidden="true"></span>
+            未登入
+          </button>
+          <button class="logout-button" type="button" hidden>登出</button>
+        </div>
+        <button class="back-home nav-control" data-target="home" type="button">返回首頁</button>
+      </div>
+
+      <div class="checkout-hero">
+        <div>
+          <p class="eyebrow">Order Station</p>
+          <h2>選擇你的產品與補給方案</h2>
+          <p>選定補給方案後即可建立訂單，登入會員可查看訂購狀態與付款資訊。</p>
+        </div>
+        <div class="checkout-meter">
+          <span>Current Fuel</span>
+          <strong class="summary-product">Original</strong>
+          <em class="summary-plan">20L / $699</em>
+        </div>
+      </div>
+
+      <div class="checkout-steps" aria-label="Checkout progress">
+        <span class="step active" data-step="select">1 選擇</span>
+        <span class="step" data-step="order">2 訂購</span>
+        <span class="step" data-step="payment">3 付款</span>
+        <span class="step" data-step="success">4 完成</span>
+      </div>
+
+      <div class="checkout-grid">
+        <section class="checkout-panel">
+          <p class="eyebrow">Product</p>
+          <div class="mini-product-grid">
+            <button class="mini-product active" data-product="Original" type="button">
+              <span class="mini-color original"></span>
+              <strong>Original</strong>
+              <em>Classic Spark</em>
+            </button>
+            <button class="mini-product" data-product="Zero" type="button">
+              <span class="mini-color zero"></span>
+              <strong>Zero</strong>
+              <em>Light Boost</em>
+            </button>
+            <button class="mini-product" data-product="Cherry" type="button">
+              <span class="mini-color cherry"></span>
+              <strong>Cherry</strong>
+              <em>Sweet Charge</em>
+            </button>
+          </div>
+        </section>
+
+        <section class="checkout-panel">
+          <p class="eyebrow">Plan</p>
+          <div class="mini-plan-list">
+            <button class="mini-plan" data-plan="10L" type="button">
+              <span>10L 補給包</span>
+              <strong>$399</strong>
+            </button>
+            <button class="mini-plan active" data-plan="20L" type="button">
+              <span>20L 補給包</span>
+              <strong>$699</strong>
+            </button>
+            <button class="mini-plan" data-plan="30L" type="button">
+              <span>30L 補給包</span>
+              <strong>$999</strong>
+            </button>
+          </div>
+        </section>
+
+        <aside class="order-card">
+          <p class="eyebrow">Order Summary</p>
+          <h3 class="order-title">Original 20L 補給包</h3>
+          <dl>
+            <div>
+              <dt>產品</dt>
+              <dd class="summary-product">Original</dd>
+            </div>
+            <div>
+              <dt>方案</dt>
+              <dd class="summary-plan">20L / $699</dd>
+            </div>
+            <div>
+              <dt>取貨方式</dt>
+              <dd>Human Fuel Station 現場補給</dd>
+            </div>
+          </dl>
+          <div class="payment-box" hidden>
+            <p>付款方式</p>
+            <div class="payment-options">
+              <button class="payment-option active" data-payment="cash" type="button">現金</button>
+              <button class="payment-option" data-payment="online" type="button">線上支付</button>
+              <button class="payment-option" data-payment="party" type="button">派對點數</button>
+            </div>
+          </div>
+          <button class="checkout-action" type="button">下定訂單</button>
+          <p class="checkout-note">欲購買請先登入會員。</p>
+        </aside>
+      </div>
+
+      <div class="success-panel" hidden>
+        <p class="eyebrow">Success</p>
+        <h2>購買成功</h2>
+        <p class="success-copy">訂單 HF-2026 已成立，補給站正在準備你的派對燃料。</p>
+        <button class="back-home nav-control" data-target="home" type="button">回到首頁</button>
+      </div>
+    </section>
+
+    <div class="login-modal" aria-hidden="true">
+      <div class="login-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <button class="modal-close" type="button" aria-label="Close login">×</button>
+        <p class="eyebrow">Member Login</p>
+        <h2 id="loginTitle">請先登入</h2>
+        <p class="login-help">系統會自動填入帳號與密碼，填完後請按登入繼續。</p>
+        <label>
+          User name
+          <input class="login-user" type="text" autocomplete="username" />
+        </label>
+        <label>
+          Password
+          <input class="login-password" type="password" autocomplete="current-password" />
+        </label>
+        <button class="login-submit" type="button" disabled>登入</button>
+      </div>
+    </div>
+
+    <footer class="site-footer section-panel" id="contact" data-section="contact">
+      <div>
+        <p class="footer-logo">Coca-Cola <span>中油</span></p>
+        <strong>Human Fuel Station</strong>
+      </div>
+      <div class="footer-links">
+        <button class="nav-control" data-target="home" type="button">Home</button>
+        <button class="nav-control" data-target="about" type="button">About</button>
+        <button class="nav-control" data-target="plan" type="button">Plan</button>
+        <button class="nav-control" data-target="products" type="button">Products</button>
+        <button class="nav-control" data-target="contact" type="button">Contact</button>
+      </div>
+      <div class="social-links" aria-label="Social links">
+        <button class="no-action-control" type="button" aria-label="Facebook">FB</button>
+        <button class="no-action-control" type="button" aria-label="Instagram">IG</button>
+        <button class="no-action-control" type="button" aria-label="YouTube">YT</button>
+        <button class="no-action-control" type="button" aria-label="X">X</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
