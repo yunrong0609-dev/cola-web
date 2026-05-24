@@ -146,10 +146,10 @@ function updateAuthUI() {
     entry.classList.toggle("logged-in", isLoggedIn);
 
     if (entry.classList.contains("join-button")) {
-      entry.innerHTML = isLoggedIn ? "Hi, yourong" : 'Join Party <span class="party-mark" aria-hidden="true"></span>';
+      entry.innerHTML = isLoggedIn ? "Hi, piyan" : 'Join Party <span class="party-mark" aria-hidden="true"></span>';
     } else if (entry.classList.contains("login-chip")) {
       entry.innerHTML = isLoggedIn
-        ? '<span class="login-dot" aria-hidden="true"></span> yourong 已登入'
+        ? '<span class="login-dot" aria-hidden="true"></span> piyan 已登入'
         : '<span class="login-dot" aria-hidden="true"></span> 未登入';
     }
   });
@@ -165,7 +165,7 @@ function openLogin(afterLogin) {
   loginSubmit.disabled = true;
 
   window.clearTimeout(loginTypingTimer);
-  animateLoginField(loginUser, "yourong", () => {
+  animateLoginField(loginUser, "piyan", () => {
     animateLoginField(loginPassword, "******", () => {
       loginSubmit.disabled = false;
       loginSubmit.focus();
